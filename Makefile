@@ -13,8 +13,8 @@ all: check coverage mutants
 		setup \
 		tests
 
-module = dummy_transformations
-codecov_token = 6c56bccb-1758-4ed9-8161-97c845591c26
+module = python_katas
+codecov_token = 9efa7d6e-d2ae-4ba9-aae2-7f519bddcb01
 
 define lint
 	pylint \
