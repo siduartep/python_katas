@@ -6,10 +6,13 @@ all: check coverage mutants
 		clean \
 		coverage \
 		format \
+		green \
 		init \
 		install \
 		linter \
 		mutants \
+		red \
+		refactor \
 		setup \
 		tests
 
@@ -49,8 +52,6 @@ format:
 	black --line-length 100 ${module}
 	black --line-length 100 tests
 
-init: setup tests
-
 install:
 	pip install --editable .
 
@@ -65,3 +66,29 @@ setup: clean install
 
 tests:
 	pytest --verbose
+
+init: setup tests
+	git config --global --add safe.directory /workdir
+	git config --global user.name "Simon Duarte"
+	git config --global user.email "simon.duarte@islas.org.mx"
+
+setup: clean install
+
+red: format
+	git restore python_katas/
+	pytest --verbose \
+	&& git restore tests/ \
+	|| (git add tests/*.py && git commit -m "🛑🧪 Fail tests. This is the way.")
+	chmod g+w -R .
+
+green: format
+	pytest --verbose \
+	&& (git add python_katas/*.py tests/*.py && git commit -m "✅ Pass tests. This is the way.") \
+	|| git restore python_katas/ tests/
+	chmod g+w -R .
+
+refactor: format
+	pytest --verbose \
+	&& (git add python_katas/*.py tests/*.py && git commit -m "♻️  Refactor. This is the way.") \
+	|| git restore python_katas/ tests/
+	chmod g+w -R .
