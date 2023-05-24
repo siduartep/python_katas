@@ -1,4 +1,4 @@
-import python_katas as p
+import python_katas as pk
 
 
 def test_distances_from_average():
