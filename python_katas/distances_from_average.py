@@ -1,2 +1,2 @@
-def distances_from_average():
-    pass
+def distances_from_average(data):
+    return data
