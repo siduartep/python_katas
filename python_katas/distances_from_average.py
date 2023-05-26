@@ -1,5 +1,6 @@
 def distances_from_average(data):
-    return [0]
+    average = get_average(data)
+    return [elemento - average[0] for elemento in data]
 
 
 def get_average(numbers):
