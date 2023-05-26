@@ -10,5 +10,5 @@ def test_distances_from_average():
     assert obtained == expected
 
 
-def test_average():
+def test_get_average():
     obtained = pk.get_average()
