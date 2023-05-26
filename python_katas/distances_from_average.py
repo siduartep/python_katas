@@ -6,4 +6,5 @@ def get_average(numbers):
     total = sum(numbers)
     lenght = len(numbers)
     average = total / lenght
-    return [average]
+    rounded = round(average, 2)
+    return [rounded]

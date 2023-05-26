@@ -21,5 +21,5 @@ def test_get_average():
     expected = [2]
     assert obtained == expected
     obtained = pk.get_average([1, 3, 4])
-    expected = [2.66]
+    expected = [2.67]
     assert obtained == expected
