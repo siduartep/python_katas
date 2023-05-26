@@ -23,3 +23,9 @@ def test_get_average():
     obtained = pk.get_average([1, 3, 4])
     expected = [2.67]
     assert obtained == expected
+
+
+def test_total():
+    obtained = pk.distances_from_average([2, 2])
+    expected = [0, 0]
+    assert obtained == expected
