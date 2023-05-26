@@ -8,3 +8,7 @@ def test_distances_from_average():
     obtained = pk.distances_from_average([1])
     expected = [0]
     assert obtained == expected
+
+
+def test_average():
+    obtained = pk.get_average()
