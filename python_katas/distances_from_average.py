@@ -5,4 +5,5 @@ def distances_from_average(data):
 def get_average(numbers):
     total = sum(numbers)
     lenght = len(numbers)
-    return [total / lenght]
+    average = total / lenght
+    return [average]
