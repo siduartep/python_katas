@@ -3,4 +3,4 @@ def distances_from_average(data):
 
 
 def get_average(numbers):
-    return [0]
+    return numbers
