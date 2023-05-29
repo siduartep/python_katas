@@ -1,7 +1,7 @@
 def distances_from_average(data):
     average = get_average(data)
     substraction = [average[0] - element for element in data]
-    return substract_average_to_element(data, average)
+    return substraction
 
 
 def substract_average_to_element(data, average):
