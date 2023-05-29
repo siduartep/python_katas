@@ -29,3 +29,6 @@ def test_total():
     obtained = pk.distances_from_average([2, 2])
     expected = [0, 0]
     assert obtained == expected
+    obtained = pk.distances_from_average([123, -65, 32432, -353, -534])
+    expected = [6197.6, 6385.6, -26111.4, 6673.6, 6854.6]
+    assert obtained == expected
