@@ -1,10 +1,10 @@
 def distances_from_average(data):
     average = get_average(data)
-    return [average[0] - element for element in data]
+    return resta_promedio_elemento(data, average)
 
 
 def resta_promedio_elemento(data, average):
-    [average[0] - element for element in data]
+    return [average[0] - element for element in data]
 
 
 def get_average(numbers):
