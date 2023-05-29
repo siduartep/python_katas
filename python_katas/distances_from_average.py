@@ -3,7 +3,7 @@ def distances_from_average(data):
     return [average[0] - element for element in data]
 
 
-def resta_promedio_elemento():
+def resta_promedio_elemento(data, average):
     [average[0] - element for element in data]
 
 
