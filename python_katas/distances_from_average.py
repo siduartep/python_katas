@@ -4,10 +4,6 @@ def distances_from_average(data):
     return substraction
 
 
-def substract_average_to_element(data, average):
-    return [average[0] - element for element in data]
-
-
 def get_average(numbers):
     total = sum(numbers)
     lenght = len(numbers)
