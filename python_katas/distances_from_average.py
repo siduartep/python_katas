@@ -1,9 +1,9 @@
 def distances_from_average(data):
     average = get_average(data)
-    return resta_promedio_elemento(data, average)
+    return substract_average_to_element(data, average)
 
 
-def resta_promedio_elemento(data, average):
+def substract_average_to_element(data, average):
     return [average[0] - element for element in data]
 
 
