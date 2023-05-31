@@ -8,7 +8,7 @@ def likes(name):
     elif is_one_person:
         return print_who_likes(print_one_person, name)
     elif is_two_people:
-        return print_two_people(name)
+        return print_who_likes(print_two_people, name)
 
 
 def print_two_people(name):
