@@ -1,6 +1,6 @@
 def likes(name):
     number_likes = len(name)
-    return selector[number_likes](name)
+    return printer[number_likes](name)
 
 
 def print_three_people(name):
@@ -19,4 +19,4 @@ def print_no_one(name):
     return "no one likes this"
 
 
-selector = {0: print_no_one, 1: print_one_person, 2: print_two_people, 3: print_three_people}
+printer = {0: print_no_one, 1: print_one_person, 2: print_two_people, 3: print_three_people}
