@@ -1,6 +1,6 @@
 def likes(name):
     number_likes = len(name)
-    return print_who_likes(selector[number_likes], name)
+    return selector[number_likes](name)
 
 
 def print_two_people(name):
