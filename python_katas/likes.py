@@ -1,2 +1,2 @@
-def likes():
-    pass
+def likes(a):
+    return likes
