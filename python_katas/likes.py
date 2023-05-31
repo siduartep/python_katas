@@ -25,3 +25,6 @@ def print_no_one(name):
 
 def print_who_likes(print_function, name):
     return print_function(name)
+
+
+selector = {0: print_no_one, 1: print_one_person, 2: print_two_people}
