@@ -1,2 +1,2 @@
 def likes(name):
-    return likes
+    return "no one likes this"
