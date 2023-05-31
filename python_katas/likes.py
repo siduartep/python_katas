@@ -21,3 +21,7 @@ def print_one_person(name):
 
 def print_no_one(name):
     return "no one likes this"
+
+
+def print_who_likes(name):
+    pass
