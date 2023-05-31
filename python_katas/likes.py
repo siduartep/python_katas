@@ -24,4 +24,4 @@ def print_no_one(name):
 
 
 def print_who_likes(print_function, name):
-    pass
+    print_function(name)
