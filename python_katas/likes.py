@@ -19,4 +19,4 @@ def print_no_one(name):
     return "no one likes this"
 
 
-printer = {0: print_no_one, 1: print_one_person, 2: print_two_people, 3: print_three_people}
+printer = [print_no_one, print_one_person, print_two_people, print_three_people]
