@@ -1,6 +1,7 @@
 def likes(name):
     number_likes = len(name)
-    return printer[number_likes](name)
+    number_people = number_likes if number_likes < 5 else 4
+    return printer[number_people](name)
 
 
 def print_four_or_more_people(name):
