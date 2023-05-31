@@ -5,7 +5,11 @@ def likes(name):
     elif number_likes == 1:
         return print_one_person(name)
     elif number_likes == 2:
-        return f"{name[0]} and {name[1]} like this"
+        return print_two_people(name)
+
+
+def print_two_people(name):
+    return f"{name[0]} and {name[1]} like this"
 
 
 def print_one_person(name):
