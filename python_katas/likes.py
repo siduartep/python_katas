@@ -4,7 +4,7 @@ def likes(name):
     is_one_person = number_likes == 1
     is_two_people = number_likes == 2
     if is_no_one:
-        return print_who_likes(selector[0], name)
+        return print_who_likes(selector[number_likes], name)
     elif is_one_person:
         return print_who_likes(selector[1], name)
     elif is_two_people:
