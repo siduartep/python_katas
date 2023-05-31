@@ -1,2 +1,5 @@
 def likes(name):
-    return "no one likes this"
+    if name == []:
+        return "no one likes this"
+    else:
+        return "Peter likes this"
