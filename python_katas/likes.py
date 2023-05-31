@@ -1,6 +1,6 @@
 def likes(name):
     number_likes = len(name)
-    if name == []:
+    if number_likes == 0:
         return "no one likes this"
     elif number_likes == 1:
         return f"{name[0]} likes this"
