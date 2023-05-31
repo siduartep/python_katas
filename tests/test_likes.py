@@ -5,3 +5,6 @@ def test_likes():
     obtained = pk.likes([])
     expected = "no one likes this"
     assert obtained == expected
+    obtained = pk.likes(["Peter"])
+    expected = "Peter likes this"
+    assert obtained == expected
