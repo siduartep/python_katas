@@ -3,6 +3,6 @@ def likes(name):
     if name == []:
         return "no one likes this"
     elif number_likes == 1:
-        return "Peter likes this"
-    else:
-        return "Jacob and Alex like this"
+        return f"{name[0]} likes this"
+    elif number_likes == 2:
+        return f"{name[0]} and {name[1]} like this"
