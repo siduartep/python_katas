@@ -1,2 +1,2 @@
-def likes(a):
+def likes(name):
     return likes
