@@ -6,9 +6,9 @@ def likes(name):
     if is_no_one:
         return print_who_likes(selector[number_likes], name)
     elif is_one_person:
-        return print_who_likes(selector[1], name)
+        return print_who_likes(selector[number_likes], name)
     elif is_two_people:
-        return print_who_likes(selector[2], name)
+        return print_who_likes(selector[number_likes], name)
 
 
 def print_two_people(name):
