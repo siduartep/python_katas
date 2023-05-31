@@ -17,3 +17,6 @@ def test_likes():
     obtained = pk.likes(["Max", "John", "Mark"])
     expected = "Max, John and Mark like this"
     assert obtained == expected
+    obtained = pk.likes(["Alex", "Jacob", "Mark", "Max"])
+    expected = "Alex, Jacob and 2 others like this"
+    assert obtained == expected
