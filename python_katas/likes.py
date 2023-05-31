@@ -23,5 +23,5 @@ def print_no_one(name):
     return "no one likes this"
 
 
-def print_who_likes(name):
+def print_who_likes(print_function, name):
     pass
